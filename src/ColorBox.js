@@ -9,7 +9,7 @@ export default class ColorBox extends Component {
   }
 
   render() {
-    let newOpacity = this.props.opacity - 0.1
+    let newOpacity = (this.props.opacity - 0.1).toFixed(1)
     console.log(newOpacity)
     return (
       newOpacity > 0.1 ? (
